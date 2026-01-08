@@ -1,3 +1,16 @@
 h1{
-    color: #F13318;
+    color: #f1311898;
+}
+
+body{
+    background-color: aliceblue;
+}
+#encabezado{
+    background-color: antiquewhite;
+    height: 150px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow:5px 5px rgba(0,0,0,0.5);
 }
