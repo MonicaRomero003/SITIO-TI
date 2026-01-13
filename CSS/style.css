@@ -18,6 +18,7 @@ body{
 .logo{
     background-color: coral;
     width: 15%;
+    margin-inline: 20px;
 
 }
 .logo img{
@@ -30,6 +31,7 @@ body{
 .menu{
     background-color: cornflowerblue;
     width: 75%;
+    margin-inline: 20px;
 }
 .menu ul{
     list-style: none;
@@ -55,6 +57,7 @@ body{
 .redes{
     background-color: aquamarine;
     width: 10%;
+    margin-inline: 20px;
 }
 .redes img{
     width: 30%;
@@ -62,4 +65,75 @@ body{
     justify-content: center;
     align-items: center;
     
+}
+
+#cuerpo{
+    background-color:beige;
+    height: 550px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 50px;
+    display: row;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow:5px 5px rgba(0,0,0,0.5);
+}
+
+.tarjetas{
+    background-color:blanchedalmond;
+    height: 200px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    margin-top: auto;
+}
+.tarjeta1{
+    background-color: aquamarine;
+    width: 33%;
+    margin-inline: 20px;
+}
+.tarjeta2{
+    background-color: aquamarine;
+    width: 33%;
+    margin-inline: 20px;
+}
+.tarjeta3{
+    background-color: aquamarine;
+    width: 33%;
+    margin-inline: 20px;
+}
+.seccion{
+    background-color:aquamarine;
+    height: 200px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: auto;
+    margin-top: 20px;
+}
+#inferior{
+    background-color:blanchedalmond;
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow:5px 5px rgba(0,0,0,0.5);
+}
+.pie1{
+    background-color: aquamarine;
+    width: 50%;
+    margin-inline: 20px;
+}
+.pie2{
+    background-color: aquamarine;
+    width: 50%;
+    margin-inline: 20px;
 }
