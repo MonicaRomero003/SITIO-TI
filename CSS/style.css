@@ -126,18 +126,17 @@ body{
     margin-bottom: auto;
     margin-top: 20px;
 }
+
 #inferior{
     background-color:blanchedalmond;
-    height: 200px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 15px;
-    border-radius: 15px;
+    height: 20px;
+    width: 100% ;
+    margin-top: 100px;
     padding: 50px;
     display: flex;
-    border-radius: 25px;
-    padding: 20px;
-    box-shadow:5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    overflow: hidden;
+  
 }
 .pie1{
     background-color: aquamarine;
@@ -146,14 +145,12 @@ body{
 }
 .pie1 h4{
     text-align: center;
-    margin-top: 60px;
 }
 .pie2{
     background-color: aquamarine;
     width: 50%;
-    margin-inline: 20px;
+    margin-inline: 200px;
 }
 .pie2 h4{
     text-align: center;
-    margin-top: 60px;
 }
