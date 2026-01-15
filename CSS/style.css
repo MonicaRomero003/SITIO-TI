@@ -95,16 +95,28 @@ body{
     width: 33%;
     margin-inline: 20px;
 }
+.tarjeta1 h3{
+    text-align: center;
+    margin-top: 60px;
+}
 .tarjeta2{
     background-color: aquamarine;
     width: 33%;
     margin-inline: 20px;
+}
+.tarjeta2 h3{
+    text-align: center;
+    margin-top: 60px;
 }
 .tarjeta3{
     background-color: aquamarine;
     width: 33%;
     margin-inline: 20px;
 }
+.tarjeta3 p{
+    text-align: justify;
+    margin-top: 20px;
+}   
 .seccion{
     background-color:aquamarine;
     height: 200px;
@@ -132,8 +144,16 @@ body{
     width: 50%;
     margin-inline: 20px;
 }
+.pie1 h4{
+    text-align: center;
+    margin-top: 60px;
+}
 .pie2{
     background-color: aquamarine;
     width: 50%;
     margin-inline: 20px;
+}
+.pie2 h4{
+    text-align: center;
+    margin-top: 60px;
 }
