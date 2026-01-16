@@ -3,12 +3,13 @@ h1{
 }
 
 body{
-    background-color: aliceblue;
+    background-color: #93bedf;
+    height: 100%;
 }
 #encabezado{
-    background-color: antiquewhite;
-    height: 150px;
-    width: 80%;
+    background-color: #ffffff;
+    height: 90px;
+    width: 90%;
     margin: 0 auto;
     border-radius: 25px;
     padding: 20px;
@@ -16,7 +17,6 @@ body{
     display: flex;
 }
 .logo{
-    background-color: coral;
     width: 15%;
     margin-inline: 20px;
 
@@ -29,7 +29,6 @@ body{
     display: flex;
 }
 .menu{
-    background-color: cornflowerblue;
     width: 75%;
     margin-inline: 20px;
 }
@@ -38,24 +37,32 @@ body{
     padding: 0;
     margin: 0;
     display: flex;
-    background-color:rgba( 1,123,205,0.5);
+    background-color:#93bedf;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .menu ul li{
     margin: 0px;
-    padding: 15px 20px;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 10px;
 }
 .menu ul li a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    border-radius: 10px;
 }
 .menu ul li a:hover{
-    background-color: rgb(255,214,0);
-    padding: 15px 20px;
+    background-color: #8ef9f3;
+    padding: 1px 1px;
     color: black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .redes{
-    background-color: aquamarine;
     width: 10%;
     margin-inline: 20px;
 }
@@ -68,89 +75,135 @@ body{
 }
 
 #cuerpo{
-    background-color:beige;
-    height: 550px;
-    width: 80%;
+    flex-direction: column;
+    background-color:#8377d1;
+    height: auto;
+    width: 85%;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 10px;
     border-radius: 15px;
     padding: 50px;
     display: row;
     border-radius: 25px;
-    padding: 20px;
     box-shadow:5px 5px rgba(0,0,0,0.5);
+    font-family: cuerpo;
 }
 
 .tarjetas{
-    background-color:blanchedalmond;
-    height: 200px;
     width: 95%;
     margin: 0 auto;
     padding: 30px;
     display: flex;
     margin-top: auto;
+    border-radius: 10px;
+    height: 200px;
+    justify-content: space-between; /* las separa parejito */
+    align-items: stretch;
 }
-.tarjeta1{
-    background-color: aquamarine;
-    width: 33%;
+
+.tarjeta{
+    background-color: #93bedf;
+    height: 210px ;
+    width: 25%;
     margin-inline: 20px;
+    border-radius: 10px;
+    flex-direction: column;   /*imagen arriba, texto abajo */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
 }
-.tarjeta1 h3{
+.tarjeta h3{
+    font-family: "titulo";
+    color: black;
     text-align: center;
-    margin-top: 60px;
 }
-.tarjeta2{
-    background-color: aquamarine;
-    width: 33%;
-    margin-inline: 20px;
-}
-.tarjeta2 h3{
-    text-align: center;
-    margin-top: 60px;
-}
-.tarjeta3{
-    background-color: aquamarine;
-    width: 33%;
-    margin-inline: 20px;
-}
-.tarjeta3 p{
-    text-align: justify;
-    margin-top: 20px;
+.tarjeta img{
+    width: 100%;              /* ocupa todo el ancho */
+    height: auto;
+    border-radius: 10px 10px 0 0; /* esquinas bonitas arriba */
+    width: 90%;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 10px;
 }   
+ 
 .seccion{
-    background-color:aquamarine;
+    background-image: url("../IMAGES/fondo.jpg");
+    background-size:cover;  
+    background-position: center;
+
+    position: relative;
     height: 200px;
     width: 95%;
     margin: 0 auto;
     padding: 30px;
     margin-bottom: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(131, 119, 209, 0.8);
+    background-blend-mode: lighten;
+
+    
 }
+.seccion h3{
+    font-family: "cuerpo";
+    color: white;
+    text-align: justify;
+    align-items: center;      /* centra verticalmente */
+    justify-content: center;  /* centra el bloque de texto */
+    text-align: justify;
+    font-size: 25px;
+
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+  
 
 #inferior{
-    background-color:blanchedalmond;
-    height: 20px;
+    background-color: #6d5a72;
     width: 100% ;
-    margin-top: 100px;
-    padding: 50px;
     display: flex;
     border-radius: 5px;
-    overflow: hidden;
-  
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    align-items: center;
 }
 .pie1{
-    background-color: aquamarine;
     width: 50%;
-    margin-inline: 20px;
 }
-.pie1 h4{
+.pie1 p{
     text-align: center;
+    font-family: "pie";
+    font-size: 30px;
 }
 .pie2{
-    background-color: aquamarine;
     width: 50%;
-    margin-inline: 200px;
+
 }
-.pie2 h4{
+.pie2 p{
     text-align: center;
+    font-family: "pie";
+    font-size: large;
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: pie;
+    src: url(../FONTS/fancy.ttf);
+    letter-spacing: 8px;
+}
+
+@font-face {
+    font-family: cuerpo;
+    src: url(../FONTS/general.ttf);
+    letter-spacing: 2px;
+    font-size: 12pt;
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(../FONTS/titulos.ttf);
+    letter-spacing: 2px;
+    font-size: 20pt;
 }
