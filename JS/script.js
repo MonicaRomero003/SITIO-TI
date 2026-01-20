@@ -51,8 +51,51 @@ function ptsdeinterrupcion(){
     a = 2; b = 8;
     resultado = a * b;
 
-    document.write(`Variable a contiene ${a} <br> ` );
-    document.write(`Variable b contiene ${b} <br> ` ); 
-    document.write(`El producto de a por b es ${resultado} `);
+    alert("Variable a contiene " + a ); 
+    alert("Variable b contiene " + b ); 
+    alert("El producto de a por b es " + resultado );
+}
+function escritura(){
+    let dato, resultado;
 
+    dato = window.prompt("Introduce tu nombre", "0"); resultado = `Hola, como estas ${dato} ` ;
+
+    alert(resultado);
+}
+function doble(){
+let dato, num;
+
+    dato = window.prompt("Introduce número ?", "0"); num = parseInt(dato);
+
+    num = num *2;
+
+    alert("El doble es " + num);
+}
+
+function suma2(){
+    let dato1, dato2, num1, num2;
+    dato1 = window.prompt("Introduce primer número ?", "0"); num1 = parseInt(dato1);
+    dato2 = window.prompt("Introduce segundo número ?", "0"); num2 = parseInt(dato2);
+
+    let resultado = num1 + num2;
+
+    alert("La suma es " + resultado);
+}
+function inner(){
+    let dato, num;
+
+    dato = window.prompt("Introduce un número ?", "0"); num = parseInt(dato,10);
+
+    let resultado = num *2;
+
+    document.getElementById("salida").innerHTML = ("El doble es " + resultado);
+
+}
+function resta2(){
+    let num1 = parseInt(prompt("Introduce el primer número"));
+    let num2 = parseInt(prompt("Introduce el segundo número"));
+
+    let resultado = num1 - num2;
+
+    document.getElementById("salidaR").innerHTML = ("La resta de los números es: " + resultado);
 }
